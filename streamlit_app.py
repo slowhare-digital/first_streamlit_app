@@ -12,6 +12,10 @@ streamlit.text('🥑🍞 Avocado Toast')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
+# Let's put a pick list here so they can pick the fruit they want to include
+streamlit.multiselect("Pick the fruits: ", list(my_fuit_list.index))
+
+# Didplay the table on the pafge
 streamlit.dataframe(my_fruit_list)
 
 
